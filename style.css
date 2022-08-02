@@ -17,7 +17,7 @@ a, a:visited {
 body {
     height: 100%;
     width: 100%;
-    background-color: rgba(228, 236, 238, 0.8);
+    background-color: #fff;
 }
 
 .header {
@@ -38,6 +38,7 @@ body {
 
 .navigation__item {    
     margin: 5px;
+    transition: all 0.2s;
 }
 
 .navigation__link {
@@ -89,6 +90,7 @@ body {
 
 .input__popup:checked ~ .popup__content {
     display: block;
+    overflow: auto;
 }
 
 .popup__content {
@@ -97,19 +99,10 @@ body {
     top: 70px;
     right: 100px;
     max-width: 280px;
-    height: 382px;    
+    height: 386px;    
     background-color: rgb(150, 154, 155);
     border-radius: 5px;   
-}
-
-span {
-    position: absolute;
-    top: -10px;
-    right: 27px;
-    width: 20px;
-    height: 20px;
-    background-color: rgb(150, 154, 155);
-    transform: rotate(45deg);  
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);        
 }
 
 .popup__lists {
@@ -118,7 +111,7 @@ span {
     gap: 15px;
     padding: 15px;
     justify-content: center;
-    align-items: center;
+    align-items: center;       
 }
 
 .popup__item {
@@ -130,21 +123,21 @@ span {
 
 .popup__item:hover, .popup__item:focus {
     border: 1px solid #fff;
-    border-radius: 5px;
+    border-radius: 5px;    
 }
 
 .popup__link {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;       
 }
 
 .popup__img {    
    display: block;
    margin: 5px auto;  
    height: 35px;
-   margin-bottom: 5px;
+   margin-bottom: 5px;   
 }
 
 img {
@@ -154,7 +147,7 @@ img {
 
 .popup__link p {
     text-align: center;
-    font-size: 12px;
+    font-size: 12px;   
 }
 
 .input__popup-more, .input__popup-even {
@@ -173,6 +166,7 @@ img {
     border: 1px solid transparent;
     background-color: rgb(138, 131, 131);
     border-radius: 5px;
+    overflow: hidden;
 }
 
 .label__popup-more:hover, .label__popup-more:focus, .label__popup-even:hover, .label__popup-even:focus {    
@@ -195,6 +189,7 @@ img {
 
 .input__popup-more:checked ~ .popup__content-more {
     display: block;
+    overflow: auto;
 }
 
 .popup__content-more {
@@ -225,8 +220,5 @@ img {
     .popup__content {
         right: 30px;
     }
-    span {
-        display: none;
-    }
-}
+}   
 
