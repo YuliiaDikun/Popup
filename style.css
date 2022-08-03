@@ -72,10 +72,6 @@ body {
     transition: all 0.2s;  
 }
 
-.popup__img-mini {    
-    height: 25px;
-}
-
 .popup__label img {
     width: 100%;
 }
@@ -133,6 +129,11 @@ body {
     align-items: center;       
 }
 
+.popup__link span {
+    text-align: center;
+    font-size: 13px;   
+}
+
 .popup__img {    
    display: block;
    margin: 5px auto;  
@@ -140,14 +141,14 @@ body {
    margin-bottom: 5px;   
 }
 
+.popup__img_mini {    
+    height: 25px;
+}
+
+
 .popup__img img {
     width: 100%;    
     object-fit: contain;
-}
-
-.popup__link span {
-    text-align: center;
-    font-size: 13px;   
 }
 
 .popup__input-more, .popup__input-even {
